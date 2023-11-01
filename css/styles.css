@@ -1,0 +1,343 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #33291E;
+}
+
+body {
+    height: 100%;
+    font-family: "Ubuntu";
+    color: #33291E;
+    font-size: 16px;
+}
+
+h1 {
+   font-size: 24px;
+   font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Ubuntu'; 
+    src: url(/fonts/Ubuntu-Regular.ttf); 
+}
+
+header, .main_screen, footer {
+    width: 1110px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.top_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    align-items: flex-end;
+}
+
+.down_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    align-items: flex-end;
+    margin-right: 50px;
+}
+
+.header_logo img {
+    margin-right: 10px;
+}
+.header_logo p{
+    margin-bottom: 8px;
+}
+
+.header_navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.search {
+    position: relative;
+}
+
+.search img {
+    position: absolute;
+    right: 2px;
+    margin: auto;
+    top: 2px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+.header_search {
+    width: 285px;
+    height: 30px;
+    background-color: #F4F4F4;
+    padding-left: 15px;
+    padding-right: 25px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.header_contacts {
+    font-size: 18px;
+}
+
+.header_contacts a:first-child {
+    margin-right: 45px;
+}
+
+.header_icons:hover {
+    cursor: pointer;
+}
+
+.header_icons svg path {
+    transition: all ease 0.5s;
+}
+
+.header_icons svg:hover path{
+    fill: #33291E;
+    fill-opacity: 1;
+    transition: all ease 0.5s;
+}
+
+.header_icons svg:nth-child(2) {
+    margin: 0 15px;
+}
+
+.header_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_list li {
+    list-style-type: none;
+}
+
+.header_link {
+    margin-right: 70px;
+    transition: all ease 0.5s;
+}
+
+.header_link:hover {
+    color: #D9D9D9;
+    transition: all ease 0.5s;
+}
+
+.header_catalog {
+    background-color: #93806D;
+    padding: 13px 34px;
+    width: fit-content;
+    margin-right: 70px;
+    border-radius: 10px;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+.header_list li:first-child:hover .header_catalog {
+    background-color: transparent;
+}
+
+.header_list li:first-child:hover .header_catalog a {
+    color: #33291E;
+    transition: all ease 0.5s;
+}
+
+.header_list li:first-child:hover .sub_menu {
+    opacity: 1;
+    transition: all ease 0.5s;
+    pointer-events: all;
+}
+
+.header_list li:first-child:hover .header_catalog path {
+    fill: #33291E;
+    stroke: #33291E;
+    transition: all ease 0.5s;
+}
+
+.header_catalog svg {
+    margin-right: 15px;
+    transition: all ease 0.5s;
+}
+
+.header_catalog a {
+    color: white;
+    margin-right: 0px;
+    transition: all ease 0.5s;
+}
+
+.sub_menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease 0.5s;
+}
+
+.sub_menu li {
+    padding: 13px 34px;
+    background-color: white;
+    color: #33291E;
+    transition: all ease 1s;
+}
+
+.sub_menu li:hover {
+    background-color: #93806D;
+    color: white;
+    transition: all ease 1s;
+    cursor: pointer;
+}
+
+.header_order_button {
+    background-color: #93806D;
+    padding: 13px 30px;
+    width: fit-content;
+    border-radius: 10px;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    color: white;
+    border: 2px solid white;
+    transition: all ease 0.5s;
+}
+
+.header_order_button:hover {
+    color: #33291E;
+    background-color: white;
+    border: 2px solid #33291E;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.main {
+    margin-top: 40px;
+    background-color: #D9D9D9;
+    width: 100%;
+}
+
+.main_screen {
+    padding: 40px 0px 60px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left_side {
+    width: 730px;
+    padding: 55px 65px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.description {
+    width: 260px;
+    line-height: 160%;
+}
+
+.main_order_button {
+    margin-top: 55px;
+    background-color: #93806D;
+    padding: 13px 30px;
+    width: fit-content;
+    border-radius: 10px;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    color: white;
+    border: 2px solid white;
+    transition: all ease 0.5s;
+}
+
+.main_order_button:hover {
+    color: #33291E;
+    background-color: white;
+    border: 2px solid #33291E;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.main_screen_img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.main_screen_img img {
+    margin-bottom: 34px;
+}
+
+.main_screen_img p {
+    font-size: 14px;
+}
+
+.right_side {
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px 0px 0px;
+    align-items: center;
+
+}
+
+.main_screen_opacity_logo {
+    width: 45px;
+    margin-bottom: 25px;
+}
+
+.right_side h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.advantages_list li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.advantages_list img {
+    margin-right: 10px;
+}
+
+
+
+
